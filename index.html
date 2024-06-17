@@ -121,6 +121,40 @@
         transition: 0.5s;
         cursor: pointer;
       }
+      @media (max-width: 600px) {
+        .container {
+          width: 90%;
+          margin: 10% auto;
+          position: relative;
+        }
+        .input label {
+          font-size: 15px;
+        }
+        .btn {
+          font-size: 18px;
+          width: 80%;
+        }
+        #rs {
+          font-size: 50px;
+        }
+        .button-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          top: 10px;
+        }
+        .button-container > button {
+          z-index: 1;
+        }
+        .button-container hr {
+          width: 100%;
+          border: 0;
+          border-top: 1px solid hsl(0, 0%, 80%);
+          margin: 5px 0;
+          position: absolute;
+        }
+      }
     </style>
   </head>
   <body>
@@ -167,12 +201,6 @@
         <span id="ryy">-- </span>years <br /><span id="rmm">-- </span>months
         <br /><span id="rdd"> -- </span>days
       </p>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Radhouen911</a>.
     </div>
   </body>
 </html>
