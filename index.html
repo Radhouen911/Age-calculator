@@ -89,14 +89,30 @@
         font-weight: 900;
         font-style: italic;
       }
+      .error {
+        margin: 0%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: hsl(0, 100%, 67%);
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="input">
-        <label for="dd">Day <input type="text" class="btn" id="dd" /></label>
-        <label for="mm">Month <input type="text" class="btn" id="mm" /></label>
-        <label for="yy">Year <input type="text" class="btn" id="yy" /></label>
+        <label for="dd"
+          >Day <input type="text" class="btn" id="dd" />
+          <p class="error" id="dderror" hidden></p
+        ></label>
+        <label for="mm"
+          >Month <input type="text" class="btn" id="mm" />
+          <p class="error" id="mmerror" hidden></p
+        ></label>
+        <label for="yy"
+          >Year <input type="text" class="btn" id="yy" />
+          <p class="error" id="yyerror" hidden></p
+        ></label>
       </div>
       <div class="button-container">
         <hr
@@ -119,7 +135,7 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="34"
+            width="50"
             height="32"
             viewBox="0 0 46 44"
           >
