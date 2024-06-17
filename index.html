@@ -35,18 +35,29 @@
       }
       .container {
         background-color: hsl(0, 0%, 100%);
-        width: 500px;
+        width: 600px;
         height: auto;
         margin: 10% auto;
         display: flex;
         flex-direction: column;
-        border-radius: 10px;
+        border-radius: 30px;
+        border-bottom-right-radius: 30%;
       }
       .cal {
         border-radius: 100%;
         height: 60px;
         width: 60px;
         background-color: hsl(259, 100%, 65%);
+      }
+      .error {
+        margin: 0%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        padding-top: 6px;
+        font-size: 9px;
+        font-style: italic;
+        width: 90px;
+        color: hsl(0, 100%, 67%);
       }
       .input {
         display: flex;
@@ -56,7 +67,7 @@
       }
       .input label {
         margin-bottom: 5px;
-        font-size: 10px;
+        font-size: 11px;
         color: #777;
         text-transform: uppercase;
         font-weight: 700;
@@ -67,12 +78,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80px;
-        height: 30px;
-        font-size: 17px;
+        width: 95px;
+        height: 45px;
+        font-size: 22px;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: normal;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+      }
+      .btn:focus {
+        border-color: hsl(259, 100%, 65%);
+        transition-duration: 0.5s;
       }
       .button-container {
         display: flex;
@@ -90,13 +108,7 @@
         font-weight: 900;
         font-style: italic;
       }
-      .error {
-        margin: 0%;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: italic;
-        color: hsl(0, 100%, 67%);
-      }
+
       button {
         background-color: hsl(259, 100%, 65%);
         border-radius: 100%;
@@ -115,15 +127,15 @@
     <div class="container">
       <div class="input">
         <label for="dd"
-          >Day <input type="text" class="btn" id="dd" />
+          >Day <input type="text" class="btn" id="dd" placeholder="   DD" />
           <p class="error" id="dderror" hidden></p
         ></label>
         <label for="mm"
-          >Month <input type="text" class="btn" id="mm" />
+          >Month <input type="text" class="btn" id="mm" placeholder="   MM" />
           <p class="error" id="mmerror" hidden></p
         ></label>
         <label for="yy"
-          >Year <input type="text" class="btn" id="yy" />
+          >Year <input type="text" class="btn" id="yy" placeholder="   YYYY" />
           <p class="error" id="yyerror" hidden></p
         ></label>
       </div>
